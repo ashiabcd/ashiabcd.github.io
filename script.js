@@ -212,19 +212,7 @@ function checkWin(board, player) {
         return gameWon;
     }
 
-    else if (document.getElementById('r13').checked) {
-        let plays = board.reduce((a, e, i) =>
-            (e === player) ? a.concat(i) : a, []);
-        let gameWon = null;
-        for (let [index, win] of winningcombinations2.entries()) {
-            if (win.every(elem => plays.indexOf(elem) > -1)) {
-                gameWon = { index: index, player: player };
-                break;
-            }
-        }
-
-        return gameWon;
-    }
+   
 }
 
 function gameOver(gameWon) {
