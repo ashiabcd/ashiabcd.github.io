@@ -198,7 +198,7 @@ function hint(callback) {
 
 
 function checkWin(board, player) {
-    if (document.getElementById('r12').checked) {
+     
         let plays = board.reduce((a, e, i) =>
             (e === player) ? a.concat(i) : a, []);
         let gameWon = null;
@@ -210,7 +210,7 @@ function checkWin(board, player) {
         }
 
         return gameWon;
-    }
+    
 
    
 }
