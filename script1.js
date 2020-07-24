@@ -25,10 +25,7 @@ function startGame2() {
     document.getElementById("r13").disabled = true;
 
     Board = Array.from(Array(25).keys());
-    for (var x = 0; x < 9; x++) {
-
-        Board[x] = 'X';
-    }
+    
     for (var i = 0; i < pointer.length; i++) {
         pointer[i].innerText = '';
         pointer[i].style.removeProperty('background-color');
